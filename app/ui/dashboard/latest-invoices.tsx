@@ -13,14 +13,13 @@ export default async function LatestInvoices() {
         Latest Invoices
       </h2>
       <div className="flex grow flex-col justify-between rounded-xl bg-gray-50 p-4">
-
         <div className="bg-white px-6">
           {latestInvoices.map((invoice, i) => {
             return (
               <div
                 key={invoice.id}
                 className={clsx(
-                  'flex flex-row items-center justify-between py-4',
+                  'flex flex-row items-center justify-between py-4 hover:bg-sky-100',
                   {
                     'border-t': i !== 0,
                   },
